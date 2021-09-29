@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+	/* Primary */
+	--soft-red: hsl(7, 99%, 70%);
+	--yellow: hsl(51, 100%, 49%);
+	--dark-desaturated-cyan: hsl(167, 40%, 24%); /* graphic design text */
+	--dark-blue: hsl(198, 62%, 26%); /* photography text */
+	--dark-moderate-cyan: hsl(168, 34%, 41%); /* footer */
+	/* Neutral */
+	--very-dark-desaturated-blue: hsl(212, 27%, 19%);
+	--very-dark-grayish-blue: hsl(213, 9%, 39%);
+	--dark-grayish-blue: hsl(232, 10%, 55%);
+	--grayish-blue: hsl(210, 4%, 67%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Fraunces', serif;
+}
+
+p {
+	line-height: 1.5rem;
+	color: var(--very-dark-grayish-blue);
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	background-image: url('../images/desktop/image-header.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 85vh;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 2rem;
+}
+
+nav .logo {
+	height: fit-content;
+}
+
+nav .menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	color: white;
+	font-family: 'Barlow', sans-serif;
+	margin: 0 1rem;
+}
+
+nav #contact {
+	background-color: white;
+	color: var(--very-dark-desaturated-blue);
+	font-family: 'Fraunces', serif;
+	padding: 1rem 2rem;
+	border-radius: 25px;
+}
+
+nav #contact:hover {
+	background-color: HSL(200, 100%, 72%);
+	color: white;
+}
+
+nav #hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+header h1 {
+	color: white;
+	font-size: 3.5rem;
+	letter-spacing: 0.3rem;
+	margin-top: 5rem;
+}
+
+header #arrow-down {
+	margin-top: 10rem;
+	padding-bottom: 13rem;
+}
+
+.highlights {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, minmax(650px, 1fr));
+	grid-template-areas:
+		'tt t'
+		'so sot'
+		'gd p';
+}
+
+.highlights h2,
+a {
+	color: var(--very-dark-desaturated-blue);
+	font-family: 'Fraunces', serif;
+}
+
+.highlights h2 {
+	font-size: 3rem;
+}
+
+.highlights p {
+	padding: 2rem 0;
+}
+
+.highlight {
+	padding: 9rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.highlight-1 {
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-end;
+}
+
+.highlight-1 h2 {
+	font-size: 2rem;
+}
+
+.highlight-1 p {
+	margin: 0 14rem 1rem 14rem;
+}
+
+#transform-text {
+	grid-area: tt;
+}
+
+#transform {
+	background-image: url('../images/desktop/image-transform.jpg');
+	grid-area: t;
+}
+
+#stand-out {
+	background-image: url('../images/desktop/image-stand-out.jpg');
+	grid-area: so;
+}
+
+#stand-out-text {
+	grid-area: sot;
+}
+
+#graphic-design {
+	background-image: url('../images/desktop/image-graphic-design.jpg');
+	grid-area: gd;
+}
+
+#graphic-design h2,
+#graphic-design p {
+	color: var(--dark-desaturated-cyan);
+}
+
+#photography {
+	background-image: url('../images/desktop/image-photography.jpg');
+	grid-area: p;
+}
+
+#photography h2,
+#photography p {
+	color: var(--dark-blue);
+}
+
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonials h3 {
+	margin-top: 8rem;
+	font-size: 1.35rem;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	color: var(--grayish-blue);
+}
+
+.testimonial-container {
+	display: flex;
+	text-align: center;
+}
+
+.testimonial {
+	padding: 4rem;
+}
+
+.testimonial img {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	margin-bottom: 3.5rem;
+}
+
+.testimonial p {
+	margin-bottom: 4rem;
+}
+
+.testimonial h4 {
+	margin-bottom: 0.65rem;
+	color: var(--very-dark-desaturated-blue);
+}
+
+.testimonial span {
+	font-size: 0.9rem;
+	color: var(--grayish-blue);
+}
+
+.img-group {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 45vh;
+	grid-template-areas: 'mb o c sc';
+}
+
+#milkbottles {
+	background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+	background-size: 100% 100%;
+	grid-area: mb;
+}
+
+#orange {
+	background-image: url('../images/desktop/image-gallery-orange.jpg');
+	background-size: 100% 100%;
+	grid-area: o;
+}
+
+#cone {
+	background-image: url('../images/desktop/image-gallery-cone.jpg');
+	background-size: 100% 100%;
+	grid-area: c;
+}
+
+#sugarcubes {
+	background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+	background-size: 100% 100%;
+	grid-area: sc;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+	background-color: var(--dark-moderate-cyan);
+	color: var(--dark-desaturated-cyan);
+}
+
+footer .logo {
+	filter: invert(25%) sepia(9%) saturate(2720%) hue-rotate(116deg)
+		brightness(35%) contrast(80%);
+}
+
+.footer-links {
+	margin-top: 3rem;
+	margin-bottom: 4.5rem;
+	display: flex;
+}
+
+footer a {
+	font-family: 'Barlow', sans-serif;
+	color: var(--dark-desaturated-cyan);
+	margin: 1.5rem;
+}
+
+footer a:hover {
+	color: white;
+}
+
+.social-container img {
+	margin: 0.75rem;
+}
+
+.social-container img:hover {
+	filter: brightness(0) invert(1);
+	cursor: pointer;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+	p {	
+		font-size: 1.25rem;
+		line-height: 1.625rem;
+		color: var(--very-dark-grayish-blue);
+	}
+
+	header {
+		background-image: url('../images/mobile/image-header.jpg');
+		text-align: center;
+		height: 600px;
+	}
+
+	nav #hamburger {
+		display: block;
+	}
+
+	nav .menu {
+		z-index: 1;
+		position: absolute;
+		background-color: white;
+		transform: translateY(35%);
+		flex-direction: column;
+		align-items: center;
+		height: 300px;
+		width: 90vw;
+		padding: 2rem;
+		display: none;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	nav .menu::before {
+		content: '';
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-left: 10px solid transparent;
+		border-right: 10px solid white;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid white;
+		right: 0.005%;
+		top: -19px;
+	}
+
+	.menu a {
+		color: var(--dark-grayish-blue);
+		margin: 0.5rem 1rem;
+	}
+
+	.menu #contact {
+		background-color: var(--yellow);
+	}
+
+	header h1 {
+		font-size: 2.5rem;
+	}
+
+	header #arrow-down {
+		margin-top: 4rem;
+	}
+
+	.highlights {
+		grid-template-columns: 1fr;
+		grid-template-rows: 500px 600px 500px 600px 900px 900px;
+		grid-template-areas:
+			't'
+			'tt'
+			'so'
+			'sot'
+			'gd'
+			'p';
+	}
+
+	.highlight {
+		text-align: center;
+		padding: 3rem 2rem;
+	}
+
+	.highlight h2 {
+		font-size: 2rem;
+	}
+
+	.highlight-1 p {
+		font-size: 1.25rem;
+		margin: 0 2rem;
+		padding-bottom: 5rem;
+	}
+
+	#transform {
+		background-image: url('../images/mobile/image-transform.jpg');
+		background-position: center;
+	}
+
+	#stand-out {
+		background-image: url('../images/mobile/image-stand-out.jpg');
+		background-position: center;
+		min-height: 50vh;
+	}
+
+	#graphic-design {
+		background-image: url('../images/mobile/image-graphic-design.jpg');
+		background-position: center;
+	}
+
+	#photography {
+		background-image: url('../images/mobile/image-photography.jpg');
+		background-position: center;
+	}
+
+	.testimonials h3 {
+		margin-top: 4rem;
+	}
+
+	.testimonial-container {
+		flex-direction: column;
+		margin-bottom: 3rem;
+	}
+
+	.testimonial {
+		padding: 2rem;
+	}
+
+	.img-group {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(2, 300px);
+		grid-template-areas:
+			'mb o'
+			'c sc';
+	}
+
+	#milkbottles {
+		background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
+	}
+
+	#orange {
+		background-image: url('../images/mobile/image-gallery-orange.jpg');
+	}
+
+	#cone {
+		background-image: url('../images/mobile/image-gallery-cone.jpg');
+	}
+
+	#sugarcubes {
+		background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+	}
+
+	footer {
+		padding: 3rem 2rem;
+	}
+
+	.footer-links {
+		margin: 1rem;
+	}
+}
