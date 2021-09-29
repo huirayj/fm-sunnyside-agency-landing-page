@@ -31,9 +31,9 @@ Users should be able to:
 
 ### Screenshot
 #### Desktop
-![Desktop Screenshot](./assets/images/screenshots/ss-ssunyside-desktop.png)
+![Desktop Screenshot](./assets/images/screenshots/ss-sunnyside-desktop.png)
 #### Mobile
-![Mobile Screenshot](./assets/images/screenshots/ss-ssunyside-mobile.png)
+![Mobile Screenshot](./assets/images/screenshots/ss-sunnyside-mobile.png)
 
 ### Links
 
